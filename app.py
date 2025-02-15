@@ -36,10 +36,10 @@ def set_background():
 
 # Apply background
 set_background()
-st.markdown("<h1 style='text-align: center; color: white;'>🎬 Movie Recommender System</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center; color: white;'>Find your next favorite movie!</h3>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>🎬 Movie Recommender System</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: black;'>Find your next favorite movie!</h3>", unsafe_allow_html=True)
 
-st.markdown("<h4 style='text-align: center; color: white;'>Choose a movie for recommendations:</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: black;'>Choose a movie for recommendations:</h4>", unsafe_allow_html=True)
 selected_movie_name = st.selectbox("", movies['title'].values)
 
 
@@ -48,26 +48,26 @@ if st.button('Recommend'):
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
-        st.markdown(f"<h4 style='text-align: center; color: white;'>{names[0]}</h4>", unsafe_allow_html=True)
+        st.markdown(f"<h4 style='text-align: center; color: black;'>{names[0]}</h4>", unsafe_allow_html=True)
 
         st.image(posters[0])
 
     with col2:
-        st.markdown(f"<h4 style='text-align: center; color: white;'>{names[1]}</h4>", unsafe_allow_html=True)
+        st.markdown(f"<h4 style='text-align: center; color: black;'>{names[1]}</h4>", unsafe_allow_html=True)
 
         st.image(posters[1])
 
     with col3:
-        st.markdown(f"<h4 style='text-align: center; color: white;'>{names[2]}</h4>", unsafe_allow_html=True)
+        st.markdown(f"<h4 style='text-align: center; color: black;'>{names[2]}</h4>", unsafe_allow_html=True)
 
         st.image(posters[2])
 
     with col4:
-        st.markdown(f"<h4 style='text-align: center; color: white;'>{names[3]}</h4>", unsafe_allow_html=True)
+        st.markdown(f"<h4 style='text-align: center; color: black;'>{names[3]}</h4>", unsafe_allow_html=True)
 
         st.image(posters[3])
 
     with col5:
-        st.markdown(f"<h4 style='text-align: center; color: white;'>{names[4]}</h4>", unsafe_allow_html=True)
+        st.markdown(f"<h4 style='text-align: center; color: black;'>{names[4]}</h4>", unsafe_allow_html=True)
 
         st.image(posters[4])
